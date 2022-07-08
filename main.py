@@ -1,7 +1,9 @@
+f = open('data.csv').read()
+rows =f.split('\n')
+country = []
+for i in rows:
+    country.append(i.split(',')[3])
+print(country)
 
-def get_column(data):
-    column_name = []
-    return column_name
 
-data = open('data.csv').read()
-print(type(data))
+
